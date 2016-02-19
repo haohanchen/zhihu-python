@@ -1,0 +1,34 @@
+从经济学角度解释，国家之间的贫富差距是怎样形成的？
+
+作者: 羊小雪  赞同: 19
+
+
+诶呀小伙子，你这个问题太大了，就算大神来了，恐怕也是要活生生写一本书的。既然还没有大神来，我就先粗浅地瞎说一下，有什么继续问的欢迎评论，我再来填坑。
+
+先偷懒引一段吧。
+
+In the voluminous literature on this subject, three strands of thoughts stand out. First, there is a long and distinguished line of theorizing that places geography at the center of the story. Geography is a key determinant of climate, endowment of natural resources, disease burden, transport costs, and diffusion of knowledge and technology from more advanced areas. It exerts therefore a strong influence on agricultural productivity and the quality of human resources. Recent writings by Jared Diamond and Jeffrey Sachs are among the more notable works in this tradition (see Diamond 1997; Gallup, Sachs, and Mellinger 1998, and Sachs 2001). 
+
+A second camp emphasizes the role of international trade as a driver of productivity change. We call this the integration view, as it gives market integration, and impediments thereof, a starring role in fostering economic convergence between rich and poor regions of the world. Notable recent research in this camp includes Frankel and Romer (FR,1999) and the pregeography work of Sachs (Sachs and Warner 1995). 
+
+Finally, a third group of explanations centers on institutions, and in particular the role of property rights and the rule of law. In this view, what matters are the rules of the game in a society and their conduciveness to desirable economic behavior. This view is associated most strongly with Douglass North (1990). It has received careful econometric treatment recently in Hall and Jones (1999), who focus on what they call “social infrastructure,” and in Acemoglu, Johnson, and Robinson (AJR, 2001), who focus on the expropriation risk that current and potential investors face.
+这其实已经说得相当全面又精简了，我就不说了吧（喂）。
+
+关于经济发展不平衡的原因，总体上分为地理因素，市场一体化，和社会制度三个方向。传统的地理因素决定论很好理解，比方说临海，地势，土地生产力，比方说赤道气候带的旱雨季交杂的非洲粮食不好长，疟疾和黄热病也会影响人力资本，再加上溢出效应和集聚效应，这些地理位置决定的因素都会影响经济发展。可是你一想呢，就知道这肯定不绝对啊，比如南北韩和东西德都是很好的反例。
+
+于是另一波僵尸出现了，他们认为社会制度才是决定性因素。说社会制度好像还不大全面，盗用一个马哲概念，叫上层建筑好像更恰当。同时大家一致认为，法制体系，尤其是所有权，是重中之重。那么怎么证明这个观点呢，一个著名的思路就是去证明殖民初期的殖民地特点决定了制度体系，而制度体系进而决定发展进程。这个思路的槽点有很多，比如上层建筑是会不断变化的，比如第一次欧洲殖民浪潮期间并没有产生「好」的社会体系，最关键是经济发展史中的数据统计跟它不完全一致，再者该思路本身也不能满足数据分析时的exclusion restriction。这里一个喜闻乐见的反例就是，中国和前苏联。
+
+另外还有一波僵尸就是市场一体化派，即国际贸易推进经济发展。这个先不多说了。
+
+其实这些因素，显然不仅都有影响，同时也是在相互影响的。大家争论的要点无非是哪个要素更为原始和首要，以及更直接罢了。可是想要肯定地说，哪个哪个最重要，我觉得也是武断的。地理因素千差万别，社会制度也不好一概而论，民主与否，集权与否，都是很复杂的议题。但是针对你的问题，我觉得以上这些应该多少有点帮助了。
+
+今天知乎的配额快要用完了浏览器快要爆炸啦，于是就这样草率地结尾了吧o(*￣▽￣*)ゞ 
+
+
+Ref. 
+Rodrik, Dani, Arvind Subramanian and Francesco Trebbi. “Institutions Rule: The Primacy of
+Institutions over Geography and Integration in Economic Development.” NBER Working Paper
+9305, October 2002.  (http://www.nber.org/papers/w9305.pdf?new_window=1)
+
+
+原链接: http://www.zhihu.com/question/22987390/answer/23275523

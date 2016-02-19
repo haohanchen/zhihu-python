@@ -1,0 +1,19 @@
+经济学研究中一般如何衡量贫富差距？
+
+作者: Rocher不是巧克力  赞同: 0
+
+
+昨晚考试有个问题就是关于inequality，有个单词没想起来囧rz～
+回归正题，衡量inequality有四大标准：
+1. population principle
+2. anonymity principle
+3. relative income principle
+4. the Dalton principle
+Lorenz Criterion满足上面四个原则，所以首先就是洛伦兹曲线（Lorenz Curve）咯。
+然后常见的数字衡量方法就有Gini Coefficient，Kuznets Ratio，Mean Absolute Deviation，Coefficient of Variation，具体计算方法请自行百度Google或者wikipidia（因为不会用手机打公式==）。
+然后关于Kuznets那个Inverted-U曲线，拉丁效应存在所以是一个statistical artifact，我觉得不能用它来衡量贫富差距。
+还有，在generalized poverty gap ratio就是那个我忘了三位经济学家叫什么的那个指标中，p2也可以衡量贫困人群中的inequality。
+以上具体参考Debraj Ray的Development Economics。
+
+
+原链接: http://www.zhihu.com/question/37996970/answer/77167674

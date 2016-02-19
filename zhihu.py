@@ -340,6 +340,10 @@ class User:
         soup = BeautifulSoup(r.content)
         self.soup = soup
 
+    #Haohan: 新增 作者页面地址提取
+    def get_user_url(self):
+        return self.user_url
+
     def get_user_id(self):
         if self.user_url == None:
             # print "I'm anonymous user."
@@ -402,6 +406,81 @@ class User:
                     return 'male'
             except:
                 return 'unknown'
+
+
+        """
+            Haohan
+            增加获取知乎识用户的地点，教育
+
+        """
+    def get_location(self):
+        if self.user_url == None:
+            print "I'm anonymous user."
+            return 'unknown'
+        else:
+            if self.soup == None:
+                self.parser()
+            soup = self.soup
+            try:
+                return soup.find("span", class_="location item").get_text()
+            except:
+                return 'unknown'
+        
+
+    def get_business(self):
+        if self.user_url == None:
+            print "I'm anonymous user."
+            return 'unknown'
+        else:
+            if self.soup == None:
+                self.parser()
+            soup = self.soup
+            try:
+                return soup.find("span", class_="business item").get_text()
+            except:
+                return 'unknown'
+
+    def get_employment(self):
+        if self.user_url == None:
+            print "I'm anonymous user."
+            return 'unknown'
+        else:
+            if self.soup == None:
+                self.parser()
+            soup = self.soup
+            try:
+                return soup.find("span", class_="employment item").get_text()
+            except:
+                return 'unknown'
+
+    def get_position(self):
+        if self.user_url == None:
+            print "I'm anonymous user."
+            return 'unknown'
+        else:
+            if self.soup == None:
+                self.parser()
+            soup = self.soup
+            try:
+                return soup.find("span", class_="position item").get_text()
+            except:
+                return 'unknown'
+
+
+    def get_education(self):
+        if self.user_url == None:
+            print "I'm anonymous user."
+            return 'unknown'
+        else:
+            if self.soup == None:
+                self.parser()
+            soup = self.soup
+            try:
+                return soup.find("span", class_="education item").get_text()
+            except:
+                return 'unknown'
+
+
 
     def get_followees_num(self):
         if self.user_url == None:
@@ -481,6 +560,21 @@ class User:
             soup = self.soup
             collections_num = int(soup.find_all("span", class_="num")[3].string)
             return collections_num
+            
+            
+            
+    # Haohan: add: 关注的话题
+
+#    def get_topic_following(self):
+#        # Get three types of info for now: location, education, topic
+#        if self.user_url == None:
+#            print "I'm anonymous user."
+#            return 0
+#        else:
+#            user_about_url = self.user_url + "/topics"
+#            r = requests.get(user_about_url)
+#            soup = BeautifulSoup(r.content)
+
 
     def get_followees(self):
         if self.user_url == None:
@@ -790,7 +884,23 @@ class Answer:
             self.content = content
             return content
 
-    def to_txt(self):
+    # Save text, one line each post, add "[END@OF@ANSWER]" symbol
+    def text_one_line(self):
+        content = self.get_content()
+        body = content.find("body")        
+        text_raw = body.get_text().encode("utf-8")
+        text_cleaned = "".join(text_raw.split("\n"))
+        text_cleaned = text_cleaned + "[END@OF@ANSWER]\n"
+        return text_cleaned
+
+#    def to_txt_seperate(self, ):
+#        content = self.get_content()
+#        body = content.find("body")        
+#        body.get_text().encode("utf-8"))
+
+    
+
+    def to_txt(self, title=None, detail=None, answers_num=None, followers_num=None, topics=None, visit_times=None, user = None):
 
         content = self.get_content()
         body = content.find("body")
@@ -853,6 +963,35 @@ class Answer:
             f.write("作者: " + self.get_author().get_user_id() + "  赞同: " + str(self.get_upvote()) + "\n\n")
             f.write(body.get_text().encode("utf-8"))
             f.write("\n" + "原链接: " + self.answer_url)
+        
+        # Haohan: 加上原问题信息
+        f.write("\n\n=======\n")
+        f.write("问题标题: " + title + "\n") 
+        f.write("问题描述: " + detail + "\n") 
+        f.write("问题答案数: " + str(answers_num) + "\n") 
+        f.write("问题关注者数: " + str(followers_num) + "\n")
+        f.write("问题话题: " + "; ".join(topics) + "\n") 
+        f.write("问题访问数: " + str(visit_times))
+
+        # Haohan: 加上作者信息
+        f.write("\n\n=======\n")
+        f.write( "作者id: " + str(user.get_user_id()) + "\n" ) 
+        f.write( "作者data_id: " + str(user.get_data_id()) + "\n" ) 
+        f.write( "作者页面地址: " + str(user.get_user_url()) + "\n")
+        f.write( "作者性别: " + str(user.get_gender()) + "\n" ) 
+        f.write( "作者地点: " + str(user.get_location()) + "\n" ) 
+        f.write( "作者教育: " + str(user.get_education()) + "\n" ) 
+        f.write( "作者行业: " + str(user.get_business()) + "\n" ) 
+        f.write( "作者工作: " + str(user.get_employment()) + "\n" ) 
+        f.write( "作者职位: " + str(user.get_position()) + "\n" ) 
+        f.write( "作者关注者数: " + str(user.get_followers_num()) + "\n" ) 
+        f.write( "作者关注的人数: " + str(user.get_followees_num()) + "\n" ) 
+        f.write( "作者提问的个数: " + str(user.get_asks_num()) + "\n" ) 
+        f.write( "作者回答的个数: " + str(user.get_answers_num()) + "\n" ) 
+        f.write( "作者收藏夹个数: " + str(user.get_collections_num()) + "\n" ) 
+        f.write( "作者获得的赞同数: " + str(user.get_agree_num()) + "\n" ) 
+        f.write( "作者获得的感谢数: " + str(user.get_thanks_num()) ) 
+
         f.close()
 
     # def to_html(self):

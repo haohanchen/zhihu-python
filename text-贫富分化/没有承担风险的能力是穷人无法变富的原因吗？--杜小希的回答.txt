@@ -1,0 +1,27 @@
+没有承担风险的能力是穷人无法变富的原因吗？
+
+作者: 杜小希  赞同: 0
+
+
+机场成功学与胡乱断章取义，以上。
+
+无法回答以下：
+1、能力：人们基于流动性约束下根据对风险等偏好做出决策，并非能力。
+2、逻辑不通：由于对风险的态度不同，应导致预期收益不同，而非实际收益，即无法推出「这正是富人越来越富，穷人越来越穷的原因」。虽然，风险追求者更倾向于在较高风险行业里从事需要具有该技能的工作，并且更加努力，从而变富机会变大。
+3、穷人更穷：公平与效率 - 事实上富人与穷人都变富了，除了少部分非洲国家（尼日利亚）。
+
+其他：综合讨论财富、收入、工资，事实是不同的，但相近。
+1、绝对风险厌恶程度是随着收入状况提高降低（fear&stress程度变化），但相对风险厌恶程度的影响不确定，并且随着收入状况提高风险中性偏好也提高。
+2、同时，是否变富与风险倾向并无直接因果关系。（However, the connection
+between being rich and being moderately or very risk prone is ambiguous.）
+3、偏好主要涉及两点：风险偏好与耐心程度（时间贴现率）- 耐心程度对穷富而言是一样的，即「即时倾向（Present Bias）对收入不敏感」。
+4、稳定性/连续性：不同工资程度相对稳定，有阶梯型的gap。
+
+偏好会变的，比如给富人来个内生的冲击（损失收入方面的，非看个恐怖片儿刺激ta），看看对待风险态度发生了什么变化。
+
+参考：
+1、Haushofer, J., & Fehr, E. (2014). On the psychology of poverty. science,344(6186), 862-867.
+http://www.princeton.edu/~joha/publications/Haushofer_Fehr_Science_2014.pdf
+2、PREFERENCE, O. R. (1984). An empirical analysis of the inter temporal stability of risk preference. Southern Journal of Agricultural Economics.3、Weber, S., Christoph. (2013). Cultural Differences in Risk Tolerance (IWE Working Paper No. 01-2013).
+
+原链接: http://www.zhihu.com/question/28832070/answer/43900007

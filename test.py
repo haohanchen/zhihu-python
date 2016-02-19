@@ -225,10 +225,16 @@ def test():
 def main():
     url = "http://www.zhihu.com/question/24269892"
     question_test(url)
+    print "\n =================== \n"
+
     answer_url = "http://www.zhihu.com/question/24269892/answer/29960616"
     answer_test(answer_url)
+    print "\n =================== \n"
+
     user_url = "http://www.zhihu.com/people/jixin"
     user_test(user_url)
+    print "\n =================== \n"
+
     collection_url = "http://www.zhihu.com/collection/36750683"
     collection_test(collection_url)
     test()
